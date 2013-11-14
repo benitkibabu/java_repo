@@ -2,7 +2,8 @@ import java.util.*;
 
 public class MyArrayList <ElemType> extends ArrayList<ElemType>{
 
-  public int unorderSearc(ElemType key){
+  //Un Ordered Sequencial Search
+  public int unorderSearch(ElemType key){
     int k=0;
     for(k =1; k<size(); k++){
       if(((Comparable)get(k)).compareTo((Comparable)key) ==0){
@@ -12,6 +13,7 @@ public class MyArrayList <ElemType> extends ArrayList<ElemType>{
     return -1;
   }
   
+  //Ordered Sequencial Search
   public int orderSearch(ElemType key){
     int k=0;
     while(((Comparable)get(key)).compareTo((Comparable)key) <0 && k < size()){
@@ -22,5 +24,17 @@ public class MyArrayList <ElemType> extends ArrayList<ElemType>{
     }
     else
       return -1;
+  }
+  
+  //fibonacci
+  public int fibonacci(int n){
+    int fib = 0;
+    if((n==1) || (n==2)){
+      fib = 1;
+    }
+    else{
+      fib = fibonacci(n-1) + fibonacci(n-2);
+    }
+    return fib;
   }
 }
