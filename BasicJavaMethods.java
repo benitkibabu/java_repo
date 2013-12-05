@@ -1,3 +1,5 @@
+//A custom arraylist class which include some usefull method names and so fort.
+
 import java.util.*;
 
 public class MyArrayList <ElemType> extends ArrayList<ElemType>{
