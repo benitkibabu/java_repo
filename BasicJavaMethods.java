@@ -39,4 +39,15 @@ public class MyArrayList <ElemType> extends ArrayList<ElemType>{
     }
     return fib;
   }
+
+public int fibonacci(int n){
+    int fib = 0;
+    if((n==1) || (n==2)){
+      fib = 1;
+    }
+    else{
+      fib = fibonacci(n-1) + fibonacci(n-2);
+    }
+    return fib;
+  }
 }
